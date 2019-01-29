@@ -3,9 +3,11 @@
 RoR app that sync google sheet data with the Talkpush CRM data.
 
 * Ruby version
+
 **ruby 2.6.0
 
 * Rails version
+
 **Rails 5.2.2
 
 * Configuration vars
