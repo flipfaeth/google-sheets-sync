@@ -1,24 +1,49 @@
-# README
+# Google Sheets Sync
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+RoR app that sync google sheet data with the Talkpush CRM data.
 
 * Ruby version
 
-* System dependencies
+ - **ruby 2.6.0**
 
-* Configuration
+* Rails version
 
-* Database creation
+ - **Rails 5.2.2**
 
-* Database initialization
+* Configuration vars
+```
+ # App custom config vars
+ # Campaign start date. This is the date filter for the first read, 
+ # after that, the app will not longer use it, 
+ # because the app will use the last timestamp read
+ # Format: "mm/dd/YYYY h:m:s"
+ config.start_date = "01/28/2019 00:00:00"
+ # Minutes between each sync
+ config.sync_minutes = 1
 
-* How to run the test suite
+ # Google API config vars
+ config.google_api_key = "Google API key"
+ config.google_sheet_id = "Google Sheet id"
 
-* Services (job queues, cache servers, search engines, etc.)
+ # Talkpush API config vars
+ config.talkpush_api_key = "Talkpush API key"
+ config.talkpush_api_secret = "Talkpush API secret"
+ config.talkpush_campaign_id = 0000 # Talkpush campaign id
+```
 
-* Deployment instructions
+## Getting Started
 
-* ...
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+```
+- Clone the repo.
+- Run the command 'npm install'.
+- Add Google key and sheet id in the enviroment file.
+- Add Talkpush keys and campaign id in the enviroment file.
+- Run 'clockwork config/clock.rb'.
+```
+
+* Running the test
+```
+- rake test
+```
