@@ -37,7 +37,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ```
 - Clone the repo.
-- Run the command 'npm install'.
+- Run the command 'bundle install'.
 - Add Google key and sheet id in the enviroment file.
 - Add Talkpush keys and campaign id in the enviroment file.
 - Run 'clockwork config/clock.rb'.
