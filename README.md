@@ -11,7 +11,7 @@ RoR app that sync google sheet data with the Talkpush CRM data.
  - **Rails 5.2.2**
 
 * Configuration vars
-```
+```ruby
  # App custom config vars
  # Campaign start date. This is the date filter for the first read, 
  # after that, the app will not longer use it, 
